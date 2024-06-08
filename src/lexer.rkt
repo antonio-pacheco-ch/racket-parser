@@ -23,7 +23,7 @@
 
 (define-empty-tokens
  punctuation-tokens
- (SEMICOLON COMMA DOT LEFT_BRACE RIGHT_BRACE LEFT_BRACKET RIGHT_BRACKET LEFT_PAREN RIGHT_PAREN EOF))
+ (COLON SEMICOLON COMMA DOT LEFT_BRACE RIGHT_BRACE LEFT_BRACKET RIGHT_BRACKET LEFT_PAREN RIGHT_PAREN EOF))
 
 (define lex
   (lexer-src-pos
@@ -66,6 +66,7 @@
    ["&&" (token-AND)]
    ["||" (token-OR)]
    ;PUNCTUATION
+   [":" (token-COLON)]
    [";" (token-SEMICOLON)]
    ["(" (token-LEFT_PAREN)]
    [")" (token-RIGHT_PAREN)]
