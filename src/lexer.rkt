@@ -106,5 +106,4 @@
   (define p (open-input-string sample-input))
   (list (a-lexer p) (a-lexer p) (a-lexer p) (a-lexer p) (a-lexer p)))
 
-; (displayln (get-tokens lex))
 (get-tokens lex)
